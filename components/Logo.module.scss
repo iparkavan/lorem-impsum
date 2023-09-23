@@ -1,0 +1,109 @@
+.logo_container {
+  // height: 550px;
+  padding: 225px 0;
+  overflow: hidden;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all;
+    animation: rotateAndScale 2s ease-in-out infinite ;
+    // animation: rotateLogo 2s ease-in-out infinite alternate,
+    //  scaleLogo 2s 2s ease-in-out infinite alternate;
+    animation-fill-mode: backwards;
+    z-index: 2;
+    
+
+    .bottom {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      background-color: #FF5252;
+      clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
+    } 
+
+    .left {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      background-color: #6587FF;
+      clip-path: polygon(50% 50%, 0 0, 0 100%);
+    }
+
+    .top {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      background-color: #8BFF54;
+      clip-path: polygon(50% 50%, 100% 0, 0 0);
+    }
+
+    .right {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      background-color: #E9FF60;
+      clip-path: polygon(50% 50%, 100% 100%, 100% 0);
+    }
+  }
+}
+
+
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scaleLogo {
+  0% {
+    transform: scale(1)
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateAndScale {
+
+  0% {
+    transform:  rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(360deg);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1)
+  }
+}

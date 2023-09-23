@@ -1,0 +1,239 @@
+@import '../components/breakpoints';
+
+.page_content {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 1174px;
+  padding: 200px 0px;
+  gap: 64px;
+  flex-shrink: 0;
+  align-self: stretch;
+
+  .purple_rectangle {
+    width: 280px;
+    height: 1174px;
+    background-color: #6A45FF;
+    color: #FFF;
+
+    @include phone {
+      display: flex;
+      width: 40px;
+      height: 1174px;
+      // position: absolute;
+      padding: 80px 0px;
+      flex-direction: column;
+      align-items: center;
+      gap: 64px;
+      background: rgba(106, 69, 255, 0.24);
+    }
+    
+    h1 {
+      margin-top: 200px;
+      text-align: center;
+      font-family: Noto Sans;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 160%; 
+      letter-spacing: 12px;
+
+      @include phone {
+        margin-top: -20px;
+        color: #6A45FF;
+      }
+    }
+
+    p {
+      color: #FFF;
+      text-align: center;
+      font-family: Noto Sans;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 160%; 
+      letter-spacing: 7.2px;
+
+      @include phone {
+        margin-top: 40px;
+        color: black;
+        position: absolute;
+      }
+    }
+  }
+}
+
+
+.page_content_2 {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 840px;
+  background-color: #DCE1E6;
+  // padding: 200px 200px;
+  // margin-top: 80px;
+
+  @include phone {
+    display: flex;
+    padding: 80px 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+  }
+
+  .purple_rectangle_2 {
+    width: 280px;
+    height: 100%;
+    background-color: #6A45FF; 
+
+    @include phone {
+      width: 40px;
+      height: 99.6%;
+      background: rgba(106, 69, 255, 0.24);
+      position: absolute;
+    }
+
+    
+  }
+
+  .second_part {
+    display: flex;
+    position: absolute;
+    gap: 120px;
+    padding: 0px 200px;
+
+    @include phone {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  h2 {
+    display: none;
+
+    @include phone {
+      display: flex;
+      padding-left: 16px;
+      width: 311px;
+      align-items: start;
+      color: #000;
+      font-family: Noto Sans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 160%;
+      letter-spacing: 6px;
+      border-bottom: 4px solid #6A45FF;
+    }
+  }
+
+    img {
+      width: 750px;
+      height: 440px;
+      object-fit: contain;
+
+      @include phone {
+        width: 430px;
+        height: 100%;
+        margin-top: -50px;
+        margin-left: -90px;
+        z-index: 1;
+      }
+    }
+
+    .second_content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: start;
+      gap: 32px;
+
+      h2 {
+        color: #000;
+        font-family: Noto Sans;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: 9.6px;
+        border-bottom: 8px solid #6A45FF;
+
+        @include phone {
+          display: none;
+        }
+      }
+
+      p {
+        color: rgba(0, 0, 0, 0.80);
+        font-family: Noto Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; 
+        letter-spacing: 0.8px;
+
+        @include phone {
+          color: rgba(0, 0, 0, 0.80);
+          text-align: justify;
+          font-family: Noto Sans;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; 
+          // margin-left: -55px;
+          margin: 0px 20px;
+          margin-top: -55px;
+          letter-spacing: 0.7px;
+        }
+      }
+
+      .getIn {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 16px;
+        margin-top: 32px;
+
+
+        p {
+          color: #000;
+          text-align: center;
+          font-family: Noto Sans;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 160%; 
+          letter-spacing: 4.8px;
+
+          @include phone {
+            color: #000;
+            text-align: center;
+            font-family: Noto Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 160%;
+            letter-spacing: 4.8px;
+          }
+        }
+        
+        img {
+          width: 52px;
+          height: 52px;
+
+          @include phone {
+            margin-left: -10px;
+          }
+        }
+        img:hover {
+          transition: all .2s;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+}
